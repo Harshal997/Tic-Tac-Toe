@@ -1,0 +1,111 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 590px;
+  align-items: center;
+  background: linear-gradient(to right, #cc2b5e, #753a88);
+}
+
+.elements {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 120px 120px 120px;
+  grid-template-rows: 120px 120px 120px;
+  column-gap: 2px;
+  row-gap: 2px;
+  justify-content: center;
+}
+
+.box {
+  display: grid;
+  background-color: #f3a183;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.box:hover {
+  opacity: 0.3;
+}
+
+.circle {
+  background-color: inherit;
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  border: 2px solid black;
+}
+
+.cross {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.cross > .line1 {
+  width: 90px;
+  height: 2px;
+  background-color: black;
+  rotate: 45deg;
+}
+
+.cross > .line2 {
+  width: 90px;
+  height: 2px;
+  background-color: black;
+  rotate: -45deg;
+}
+
+button {
+  width: 70px;
+  padding: 4px;
+  border: none;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.small-circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  border: 2px solid black;
+}
+
+.small-cross {
+
+
+}
+
+.small-cross > .sline1 {
+  width: 24px;
+  height: 2px;
+  margin: 0px;
+  background-color: black;
+  rotate: 45deg;
+}
+
+.small-cross > .sline2 {
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  rotate: 135deg;
+}
+
+button:hover {
+  opacity: 0.4;
+}
